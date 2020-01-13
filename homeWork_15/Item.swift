@@ -39,6 +39,7 @@ class Item{
             else{return}
         
         if data == nil {
+            self.image = largeBolt
             service.downloadImage(urlString: post.url,
                                          completion: { tmp in
                                             data = tmp
@@ -55,6 +56,8 @@ class Item{
         
         var smallData = fileModel.readData(link: post.thumbnailUrl)
         if smallData == nil {
+            
+            self.smallImage = largeBolt
             service.downloadImage(urlString: post.url,
                                          completion: { tmp in
                                             smallData = tmp
