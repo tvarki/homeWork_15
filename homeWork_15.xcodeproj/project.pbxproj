@@ -20,6 +20,7 @@
 		AF924C1A23B4B9D1005DB70F /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF924C1823B4B9D1005DB70F /* PostTableViewCell.xib */; };
 		AFC3D8AB23B89BB000944E9E /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3D8AA23B89BB000944E9E /* FileModel.swift */; };
 		AFC3D8B123BF74B500944E9E /* AllFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3D8B023BF74B500944E9E /* AllFiles.swift */; };
+		AFC3D8B323CC504800944E9E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC3D8B223CC504800944E9E /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AF924C1823B4B9D1005DB70F /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		AFC3D8AA23B89BB000944E9E /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
 		AFC3D8B023BF74B500944E9E /* AllFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFiles.swift; sourceTree = "<group>"; };
+		AFC3D8B223CC504800944E9E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				AF924BF923B4A12E005DB70F /* ViewController.swift */,
 				AF924C0923B4A1AF005DB70F /* NetWorkManager.swift */,
 				AF924C0B23B4A2C6005DB70F /* Post.swift */,
+				AFC3D8B223CC504800944E9E /* Item.swift */,
 				AF924C0D23B4A485005DB70F /* PostModel.swift */,
 				AFC3D8AA23B89BB000944E9E /* FileModel.swift */,
 				AF924C1723B4B9D1005DB70F /* PostTableViewCell.swift */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC3D8B323CC504800944E9E /* Item.swift in Sources */,
 				AF924C0A23B4A1AF005DB70F /* NetWorkManager.swift in Sources */,
 				AFC3D8AB23B89BB000944E9E /* FileModel.swift in Sources */,
 				AF924C0E23B4A485005DB70F /* PostModel.swift in Sources */,

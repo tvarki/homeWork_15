@@ -124,6 +124,20 @@ extension ViewController: ModelUpdating{
         }
     }
     
+    func updateItem(at: Int) {
+        DispatchQueue.main.async {
+            self.myTableView.beginUpdates()
+            
+            let indexPath = IndexPath(row: at, section: 0)
+            
+            self.myTableView.reloadRows(at: [indexPath], with: .automatic)
+            self.myTableView.endUpdates()
+
+        }
+    }
+    
+    
+    
     func makeAlert(title: String , text: String){
         let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Закрыть", style: .default, handler: nil))

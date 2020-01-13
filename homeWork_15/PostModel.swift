@@ -10,6 +10,7 @@ import Foundation
 
 protocol ModelUpdating: AnyObject{
     func updateModel()
+    func updateItem(at: Int)
     func showError(error:String)
 }
 
@@ -21,6 +22,9 @@ class PostModel{
     let fileModel : FileModel
     
     private var postArray : [Post] = []
+    
+    
+    private var itemArray: [Item] = []
     
     private var isDataCashPosssible = true
     
@@ -45,27 +49,34 @@ class PostModel{
         self.updateModel()
     }
     
-    func getModel()->[Post]{
-        return postArray
+    func getModel()->[Item]{
+        return itemArray
     }
     
     func getModelCount()-> Int{
-        return postArray.count
+        return itemArray.count
     }
     
-    func getPost(at: Int)-> Post? {
-        guard at <= postArray.count else{return nil}
-        return postArray[at]
+    func getPost(at: Int)-> Item? {
+        guard at <= itemArray.count else{return nil}
+        return itemArray[at]
     }
     
     
     // MARK: - update - ask json
     func updateModel(){
         
-        self.fromIndex = self.postArray.count
+        self.fromIndex = self.itemArray.count
         sendGetReqest(
             completion: { tmp in
                 self.postArray += tmp
+                
+                for itm in tmp {
+                    let tmp = Item(post: itm)
+                    tmp.delegate = self
+                    self.itemArray.append(tmp)
+                }
+                
                 self.delegate?.updateModel()
         },
             failure: { error in
@@ -106,4 +117,16 @@ extension String {
             ($0 << 5) &+ $0 &+ Int($1)
         }
     }
+}
+
+
+
+extension PostModel: UpdataItem{
+    func updatItem(at: Int) {
+        delegate?.updateItem(at: at)
+//        delegate?.updateModel()
+    }
+    
+    
+    
 }

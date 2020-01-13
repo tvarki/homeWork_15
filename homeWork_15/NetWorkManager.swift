@@ -26,9 +26,7 @@ enum Result<T> {
 
 class NetworkManager{
     
-    
     let baseURL = "https://jsonplaceholder.typicode.com"
-    
     
     func downloadImage(urlString :String,
                        completion: @escaping (Data?) -> Void) {
