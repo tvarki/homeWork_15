@@ -28,18 +28,18 @@ class NetworkManager{
     
     let baseURL = "https://jsonplaceholder.typicode.com"
     
-    func downloadImage(urlString :String,
-                       completion: @escaping (Data?) -> Void) {
-        guard let url = URL(string: urlString) else { return}
-        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
-            guard
-                let data = data,
-                error == nil
-                else { return }
-
-            completion(data)
-        }.resume()
-    }
+//    func downloadImage(urlString :String,
+//                       completion: @escaping (Data?) -> Void) {
+//        guard let url = URL(string: urlString) else { return}
+//        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+//            guard
+//                let data = data,
+//                error == nil
+//                else { return }
+//
+//            completion(data)
+//        }.resume()
+//    }
 //
     
     func sendRequest<U: Decodable>(

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF2DD8AB23CC6B7F00290AAD /* DownloadImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2DD8AA23CC6B7F00290AAD /* DownloadImageService.swift */; };
 		AF924BF623B4A12E005DB70F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF924BF523B4A12E005DB70F /* AppDelegate.swift */; };
 		AF924BF823B4A12E005DB70F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF924BF723B4A12E005DB70F /* SceneDelegate.swift */; };
 		AF924BFA23B4A12E005DB70F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF924BF923B4A12E005DB70F /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF2DD8AA23CC6B7F00290AAD /* DownloadImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageService.swift; sourceTree = "<group>"; };
 		AF924BF223B4A12E005DB70F /* homeWork_15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeWork_15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF924BF523B4A12E005DB70F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF924BF723B4A12E005DB70F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				AFC3D8B023BF74B500944E9E /* AllFiles.swift */,
 				AF924BF723B4A12E005DB70F /* SceneDelegate.swift */,
 				AF924BF923B4A12E005DB70F /* ViewController.swift */,
+				AF2DD8AA23CC6B7F00290AAD /* DownloadImageService.swift */,
 				AF924C0923B4A1AF005DB70F /* NetWorkManager.swift */,
 				AF924C0B23B4A2C6005DB70F /* Post.swift */,
 				AFC3D8B223CC504800944E9E /* Item.swift */,
@@ -171,6 +174,7 @@
 				AF924C1923B4B9D1005DB70F /* PostTableViewCell.swift in Sources */,
 				AF924BF623B4A12E005DB70F /* AppDelegate.swift in Sources */,
 				AF924BF823B4A12E005DB70F /* SceneDelegate.swift in Sources */,
+				AF2DD8AB23CC6B7F00290AAD /* DownloadImageService.swift in Sources */,
 				AF924C0C23B4A2C6005DB70F /* Post.swift in Sources */,
 				AFC3D8B123BF74B500944E9E /* AllFiles.swift in Sources */,
 			);

@@ -25,6 +25,7 @@ class Item{
     
     let fileModel = FileModel(directoryName: "imgs")
     let networkManager = NetworkManager()
+    let service = DownloadImageService()
     
     init(post: Post){
         albumId = post.albumId
@@ -38,7 +39,7 @@ class Item{
             else{return}
         
         if data == nil {
-            networkManager.downloadImage(urlString: post.url,
+            service.downloadImage(urlString: post.url,
                                          completion: { tmp in
                                             data = tmp
                                             self.fileModel.saveData(link: post.url, data: data)
@@ -54,7 +55,7 @@ class Item{
         
         var smallData = fileModel.readData(link: post.thumbnailUrl)
         if smallData == nil {
-            networkManager.downloadImage(urlString: post.url,
+            service.downloadImage(urlString: post.url,
                                          completion: { tmp in
                                             smallData = tmp
                                             self.fileModel.saveData(link: post.thumbnailUrl, data: smallData)
